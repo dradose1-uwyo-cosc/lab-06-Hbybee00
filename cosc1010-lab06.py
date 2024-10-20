@@ -1,12 +1,10 @@
-# Your Name Here
+# Hayden Bybee
 # UWYO COSC 1010
-# Submission Date
+# 10/20/24
 # Lab 06
-# Lab Section: 
+# Lab Section: 16
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# N/A
 
 
 random_string = """
