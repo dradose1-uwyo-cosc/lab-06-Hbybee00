@@ -91,10 +91,96 @@ print("*"*75)
 most_occurred = ""
 least_occurred = ""
 
+lettercount = {}
+
+for character in random_string:
+    if character == " ":
+        del character
+    else:
+        lettercount[character] = 0
+
+for letter in random_string:
+    if letter == "a":
+        lettercount[letter] += 1
+    elif letter == "b":
+        lettercount[letter] += 1
+    elif letter == "c":
+        lettercount[letter] += 1
+    elif letter == "d":
+        lettercount[letter] += 1
+    elif letter == "e":
+        lettercount[letter] += 1
+    elif letter == "f":
+        lettercount[letter] += 1
+    elif letter == "g":
+        lettercount[letter] += 1
+    elif letter == "h":
+        lettercount[letter] += 1
+    elif letter == "i":
+        lettercount[letter] += 1
+    elif letter == "j":
+        lettercount[letter] += 1
+    elif letter == "k":
+        lettercount[letter] += 1
+    elif letter == "l":
+        lettercount[letter] += 1
+    elif letter == "m":
+        lettercount[letter] += 1
+    elif letter == "n":
+        lettercount[letter] += 1
+    elif letter == "o":
+        lettercount[letter] += 1
+    elif letter == "p":
+        lettercount[letter] += 1
+    elif letter == "q":
+        lettercount[letter] += 1
+    elif letter == "r":
+        lettercount[letter] += 1
+    elif letter == "s":
+        lettercount[letter] += 1
+    elif letter == "t":
+        lettercount[letter] += 1
+    elif letter == "u":
+        lettercount[letter] += 1
+    elif letter == "v":
+        lettercount[letter] += 1
+    elif letter == "w":
+        lettercount[letter] += 1
+    elif letter == "x":
+        lettercount[letter] += 1
+    elif letter == "y":
+        lettercount[letter] += 1
+    elif letter == "z":
+        lettercount[letter] += 1
+    elif letter == " ":
+        del lettercount[letter]
+
+
+print(sorted(lettercount.items()))
+
+mxcount = 0
+
+mincount = 2500
+
+for key,count in lettercount.items():
+    if count > mxcount:
+        mxcount = count
+        most_occurred = key
+    elif count < mincount:
+        mincount = count
+        least_occurred = key
+
+print("*"*75)
 print(f"The letter that occurred the most is {most_occurred}")
 print("*"*75)
 # Output which letter occurred the least 
-print(f"The letter that occurred the most is {least_occurred}")
+print(f"The letter that occurred the least is {least_occurred}")
 print("*"*75)
 
+letterpercentages = {}
+
+for keys, vals in lettercount.items():
+    letterpercentages[keys] = (vals/2500)*100
+print("Here is a list of all percentages of the letter's appearances:")
+print(sorted(letterpercentages.items()))
 # Output what the percentage of the string each character is, again in alphabetical
