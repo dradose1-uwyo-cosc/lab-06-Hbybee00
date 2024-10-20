@@ -1,12 +1,7 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Hayden Bybee]
+## [Assignment 6]
+## [Submission date: 10/20/24]
 ## Worked with/sources 
-* example
-* example
-* example
-* example
+* N/A
 ## Project Quirks/ Things that don't work
-* example
-* example
-* example
+* N/A
